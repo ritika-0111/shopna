@@ -1,0 +1,38 @@
+{% extends 'sample/base.html' %}
+
+{% block content %}
+{% load staticfiles %}
+
+<div class="container-fluid">
+    <div class="row mh-100vh">
+        <div class="col-10 col-sm-8 col-md-6 col-lg-6 offset-1 offset-sm-2 offset-md-3 offset-lg-0 d-lg-flex align-self-center align-items-lg-center align-self-lg-stretch bg-white p-5 rounded rounded-lg-0 my-5 my-lg-0" id="login-block" style="opacity: 1;">
+            <div class="m-auto w-lg-75 w-xl-50">
+                <div class="form-container">
+
+
+                  <h2 class="text-center"><strong>Create</strong> an account.</h2>
+
+                  <form method="POST">
+                    {% csrf_token %}
+
+                  {% for field in form %}
+                      <p>
+                         {{ field.label_tag }}<br>
+                         {{ field }}
+                          {% for error in field.errors %}
+                              <p style="color: red">{{ error }}</p>
+                      {% endfor %}
+                      {% endfor %}
+
+                      <button class="btn btn-info" type="submit">Register</button><br>
+
+                  <a class="already" href=/accounts/login/>You already have an account? Login here.</a>
+                  </form>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
