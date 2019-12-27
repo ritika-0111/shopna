@@ -1,0 +1,219 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>ShopNani- Home</title>
+     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" rel="stylesheet">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{% static 'assets/images/favicon.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'assets/images/apple-touch-icon.png' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/custom.css' %}">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+
+<!-- Start Main Top -->
+<header class="main-header">
+    <!-- Start Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+        <div class="container">
+            <!-- Start Header Navigation -->
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <div class="wrapper col1">
+                <a class="navbar-brand"  href="{% url 'sample:index' %}"><img src="{% static 'assets/images/shopnani.png' %}" class="logo" alt=""></a>
+                    <a class="btn btn-info" role="button" href=/accounts/register/>Sign Up</a>
+
+
+
+            <!-- End Header Navigation -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">All Stores</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="shop.html">...</a></li>
+                            <li><a href="shop-detail.html">...</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">All Categories</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="shop.html">...</a></li>
+                            <li><a href="shop-detail.html">...</a></li>
+                        </ul>
+                    </li>
+                        <li class="nav-item "><a class="nav-link" href="{% url 'sample:index' %}">How It Works</a></li>
+                        <li class="nav-item "><a class="nav-link" href="{% url 'sample:index' %}">Product Search</a></li>
+                        <li class="nav-item "><a class="nav-link" href="{% url 'sample:index' %}">Refer & Earn Rs 50+ </a></li>
+                        <li class="nav-item "><a class="nav-link" href="{% url 'sample:index' %}">About Us</a></li>
+                        <li class="nav-item "><a class="nav-link" href="{% url 'sample:index' %}">Help</a></li>
+                        <a class="btn btn-info" role="button" href=/accounts/login/>Sign In</a>
+
+
+
+
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+
+        </div>
+            </div></div>
+
+    </nav>
+    <!-- End Navigation -->
+</header>
+
+
+    {% block content %}
+
+    {% endblock content %}
+
+
+
+
+     <!-- Start Footer  -->
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 col-sm-12">
+                        <div class="footer-link">
+                            <h4>About ShopNani</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Prices</a></li>
+                                <li><a href="#">Testimonial</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 col-sm-12">
+                        <div class="footer-link">
+                            <h4>Useful Reads</h4>
+                            <ul>
+                                <li><a href="#">Terms &amp; Conditions</a></li>
+                                <li><a href="#">Privacy & Cookie Policy</a></li>
+                                <li><a href="#">Anti-Spam Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-12 col-sm-12">
+                        <div class="footer-link">
+                            <h4>Special Pages</h4>
+                            <ul>
+                                <li><a href="#">Refer &amp; Earn</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Donate Cashback</a></li>
+                                <li><a href="#">Our Partner</a></li>
+                                <li><a href="#">Student Program</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-12 col-sm-12">
+                        <div class="footer-link">
+                            <h4>Connect With Us</h4>
+                            <ul>
+                                <li><a href="#">Connect Us</a></li>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Google+</a></li>
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 col-sm-12">
+                        <div class="footer-link-contact">
+                            <h4>Global Partners</h4>
+                            <ul>
+                                <li>
+                                    <p><i class="fas fa-map-marker-alt"></i>Australia</p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-map-marker-alt"></i>France</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer  -->
+
+    <!-- Start copyright  -->
+    <div class="footer-copyright">
+        <p class="footer-company">All Rights Reserved. &copy; 2019 <a href="#">ShopNani</a>
+
+    </div>
+    <!-- End copyright  -->
+
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+    <!-- ALL JS FILES -->
+    <script src="{% static 'assets/js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'assets/js/jquery.superslides.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap-select.js' %}"></script>
+    <script src="{% static 'assets/js/inewsticker.js' %}"></script>
+    <script src="js/bootsnav.js."></script>
+    <script src="{% static 'assets/js/images-loded.min.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/baguetteBox.min.js' %}"></script>
+    <script src="{% static 'assets/js/form-validator.min.js' %}"></script>
+    <script src="{% static 'assets/js/contact-form-script.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</html>
